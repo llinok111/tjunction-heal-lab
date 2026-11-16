@@ -1,0 +1,14 @@
+{
+  "name": "tjunction-heal-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Certified conforming repair of multi-resolution T-junction seams",
+  "scripts": {
+    "gen": "node tools/gen-sample.mjs",
+    "verify": "node bench/verify.mjs",
+    "bench": "node bench/bench.mjs",
+    "serve": "python3 -m http.server 4173"
+  },
+  "license": "MIT"
+}

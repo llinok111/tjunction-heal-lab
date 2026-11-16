@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "corpora": {
+    "cube-k8": {
+      "tJunctions": 1440,
+      "watertight": true,
+      "area": 24.00000000000073,
+      "volume": 8.000000000000384,
+      "addedTriangles": 3648,
+      "addedVertices": 1104,
+      "hash": 2712082233
+    },
+    "box-k6": {
+      "tJunctions": 792,
+      "watertight": true,
+      "area": 22.00000000000023,
+      "volume": 5.999999999999583,
+      "addedTriangles": 2016,
+      "addedVertices": 612,
+      "hash": 3774240142
+    },
+    "plate-k5": {
+      "tJunctions": 480,
+      "watertight": true,
+      "area": 5.500000000000263,
+      "volume": 0.5000000000000266,
+      "addedTriangles": 1248,
+      "addedVertices": 384,
+      "hash": 1690216930
+    }
+  }
+}

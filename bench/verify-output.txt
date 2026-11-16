@@ -1,0 +1,46 @@
+PASS corpus count :: corpora=3
+PASS cube-k8: welded seam duplicates :: welded=1966
+PASS cube-k8: T-junctions found :: grid=1440 naive=1440 independent=1440
+PASS cube-k8: two detectors agree on count :: grid=1440 naive=1440 oracle=1440
+PASS cube-k8: witness set symmetric difference 0 :: symDiff=0 (1440 witnesses)
+PASS cube-k8: healed T-junctions 0 (both oracles) :: core=0 independent=0
+PASS cube-k8: watertight half-edge (core) :: boundary=0 nonManifold=0 orientation=0
+PASS cube-k8: watertight half-edge (independent sort census) :: boundary=0 nonManifold=0 conflicts=0
+PASS cube-k8: surface area preserved (<1e-12 rel) :: area=24.00000000000073 truth=24 relErr=3.042e-14
+PASS cube-k8: volume preserved (<1e-12 rel) :: volume=8.000000000000384 truth=8 relErr=4.796e-14
+PASS cube-k8: deterministic heal (bit-identical hash) :: hash=0xa1a71739
+PASS cube-k8: heal is a no-op on healed mesh :: secondPass addedTriangles=0 tJunctions=0
+PASS cube-k8: split adds only centroids (one per split triangle) :: addedVertices=1104 splitTriangles=1104
+PASS cube-k8: triangle growth bounded (<80%) :: before=7680 after=11328
+PASS cube-k8: 12k+ ray-parity points match analytic membership :: checked=175995 inside=73113 outside=102882 mismatch=0
+PASS negative control: removed face is not watertight and ray oracle detects it :: boundary=112 parityMismatch=18018/37037
+PASS scale invariance 1e-6..1e6: 0 remnants, watertight, area/volume relative invariant :: scales=[0.000001,0.001,1,1000,1000000] failures=0 tjAfter=[0,0,0,0,0]
+PASS box-k6: welded seam duplicates :: welded=1114
+PASS box-k6: T-junctions found :: grid=792 naive=792 independent=792
+PASS box-k6: two detectors agree on count :: grid=792 naive=792 oracle=792
+PASS box-k6: witness set symmetric difference 0 :: symDiff=0 (792 witnesses)
+PASS box-k6: healed T-junctions 0 (both oracles) :: core=0 independent=0
+PASS box-k6: watertight half-edge (core) :: boundary=0 nonManifold=0 orientation=0
+PASS box-k6: watertight half-edge (independent sort census) :: boundary=0 nonManifold=0 conflicts=0
+PASS box-k6: surface area preserved (<1e-12 rel) :: area=22.00000000000023 truth=22 relErr=1.044e-14
+PASS box-k6: volume preserved (<1e-12 rel) :: volume=5.999999999999583 truth=6 relErr=6.961e-14
+PASS box-k6: deterministic heal (bit-identical hash) :: hash=0xe0f6558e
+PASS box-k6: heal is a no-op on healed mesh :: secondPass addedTriangles=0 tJunctions=0
+PASS box-k6: split adds only centroids (one per split triangle) :: addedVertices=612 splitTriangles=612
+PASS box-k6: triangle growth bounded (<80%) :: before=4320 after=6336
+PASS plate-k5: welded seam duplicates :: welded=796
+PASS plate-k5: T-junctions found :: grid=480 naive=480 independent=480
+PASS plate-k5: two detectors agree on count :: grid=480 naive=480 oracle=480
+PASS plate-k5: witness set symmetric difference 0 :: symDiff=0 (480 witnesses)
+PASS plate-k5: healed T-junctions 0 (both oracles) :: core=0 independent=0
+PASS plate-k5: watertight half-edge (core) :: boundary=0 nonManifold=0 orientation=0
+PASS plate-k5: watertight half-edge (independent sort census) :: boundary=0 nonManifold=0 conflicts=0
+PASS plate-k5: surface area preserved (<1e-12 rel) :: area=5.500000000000263 truth=5.5 relErr=4.774e-14
+PASS plate-k5: volume preserved (<1e-12 rel) :: volume=0.5000000000000266 truth=0.5 relErr=5.329e-14
+PASS plate-k5: deterministic heal (bit-identical hash) :: hash=0x64bea9e2
+PASS plate-k5: heal is a no-op on healed mesh :: secondPass addedTriangles=0 tJunctions=0
+PASS plate-k5: split adds only centroids (one per split triangle) :: addedVertices=384 splitTriangles=384
+PASS plate-k5: triangle growth bounded (<80%) :: before=2928 after=4176
+PASS total T-junctions across corpus :: totalTJ=2712 over 14928 triangles
+
+44 passed / 0 failed

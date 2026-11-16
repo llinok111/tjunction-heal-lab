@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-11-16T20:29:15.002Z",
+  "node": "v24.19.0",
+  "corpus": {
+    "name": "cube-k8",
+    "vertices": 4562,
+    "triangles": 7680,
+    "weldedDuplicates": 1966,
+    "tJunctions": 1440
+  },
+  "detection": {
+    "grid": {
+      "cold": 29.625,
+      "inner": 1,
+      "samples": [
+        10.829,
+        10.853,
+        10.9,
+        11.121,
+        11.858,
+        11.932,
+        12.647
+      ],
+      "min": 10.829,
+      "median": 11.121,
+      "p95": 12.647,
+      "mean": 11.449,
+      "stddev": 0.705,
+      "relSD": 0.0634
+    },
+    "naive": {
+      "cold": 320.54,
+      "inner": 1,
+      "samples": [
+        298.825,
+        299.633,
+        301.462,
+        301.949,
+        306.258,
+        310.128,
+        314.125
+      ],
+      "min": 298.825,
+      "median": 301.949,
+      "p95": 314.125,
+      "mean": 304.626,
+      "stddev": 5.758,
+      "relSD": 0.0191
+    },
+    "speedupMedian": 27.15,
+    "speedupCold": 10.82
+  },
+  "healing": {
+    "cold": 34.53,
+    "inner": 10,
+    "samples": [
+      21.255,
+      22.236,
+      22.649,
+      22.731,
+      22.806,
+      22.965,
+      24.468,
+      25.6,
+      26.939
+    ],
+    "min": 21.255,
+    "median": 22.806,
+    "p95": 26.939,
+    "mean": 23.517,
+    "stddev": 1.799,
+    "relSD": 0.0789
+  },
+  "method": "1 cold run + 1 warmup + 7 measured (healing: 9 samples x 10 inner runs, reported per run); p95 = nearest-rank index ceil(0.95*n)-1; relSD = stddev/median"
+}
