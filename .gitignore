@@ -3,3 +3,4 @@ data/*.glb
 *.zip
 *.tar.gz
 state/
+.model-patch.yml
